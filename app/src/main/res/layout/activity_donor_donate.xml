@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".DonorDonate">
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodTp">
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Veg"/>
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Non-Veg"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/foodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Name" />
+
+    <EditText
+        android:id="@+id/foodDated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Dated" />
+
+    <EditText
+        android:id="@+id/foodExpire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Expire" />
+
+    <EditText
+        android:id="@+id/foodQty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Food Quantity" />
+
+    <Button
+        android:onClick="save"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save" />
+
+
+</LinearLayout>

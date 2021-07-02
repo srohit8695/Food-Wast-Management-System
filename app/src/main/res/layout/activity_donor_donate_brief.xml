@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DonorDonateBrief">
+
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/donorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donor Name" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/donorPh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donor Phone nos" />
+
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/donorAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donor Address" />
+
+   <LinearLayout
+       android:layout_margin="10dp"
+       android:weightSum="3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <EditText
+           android:inputType="numberDecimal"
+           android:layout_weight="1"
+           android:id="@+id/donorlat"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:hint="Latitude" />
+
+       <EditText
+           android:inputType="numberDecimal"
+           android:layout_weight="1"
+           android:id="@+id/donorlong"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:hint="Longitude" />
+
+       <Button
+           android:onClick="getLatLong"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="get location"
+           android:id="@+id/getloc"/>
+
+
+   </LinearLayout>
+
+    <Button
+        android:onClick="mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add location from google map"
+        android:id="@+id/gmap"/>
+
+    <Button
+        android:onClick="submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/submit"/>
+
+
+
+</LinearLayout>
