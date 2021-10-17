@@ -28,6 +28,7 @@ public class AcceprorAcceptedBriefView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         activityAcceprorAcceptedBriefViewBinding=ActivityAcceprorAcceptedBriefViewBinding.inflate(getLayoutInflater());
         setContentView(activityAcceprorAcceptedBriefViewBinding.getRoot());
+        setTitle("Acceptor Accepted");
 
 
         Bundle data = getIntent().getExtras();

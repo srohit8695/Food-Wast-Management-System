@@ -24,6 +24,7 @@ public class AcceptorAccepted extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Accepted");
 
         activityAcceptorAcceptedBinding=ActivityAcceptorAcceptedBinding.inflate(getLayoutInflater());
         setContentView(activityAcceptorAcceptedBinding.getRoot());

@@ -26,6 +26,7 @@ public class DonorHistoryView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_donor_history_view);
+        setTitle("History");
         activityDonorHistoryViewBinding=ActivityDonorHistoryViewBinding.inflate(getLayoutInflater());
         setContentView(activityDonorHistoryViewBinding.getRoot());
 

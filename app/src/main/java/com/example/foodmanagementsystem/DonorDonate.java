@@ -22,6 +22,7 @@ public class DonorDonate extends AppCompatActivity {
 
         activityDonorDonateBinding=ActivityDonorDonateBinding.inflate(getLayoutInflater());
         setContentView(activityDonorDonateBinding.getRoot());
+        setTitle("Donate");
 
         userId=getIntent().getStringExtra("userId");
 

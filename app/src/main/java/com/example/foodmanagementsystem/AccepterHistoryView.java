@@ -28,6 +28,8 @@ public class AccepterHistoryView extends AppCompatActivity {
         activityAccepterHistoryViewBinding=ActivityAccepterHistoryViewBinding.inflate(getLayoutInflater());
         setContentView(activityAccepterHistoryViewBinding.getRoot());
 
+        setTitle("History");
+
         userId=getIntent().getStringExtra("userId");
         new GetHistory().execute();
 

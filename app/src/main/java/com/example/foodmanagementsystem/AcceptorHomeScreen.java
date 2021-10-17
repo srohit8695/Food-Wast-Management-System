@@ -26,8 +26,7 @@ public class AcceptorHomeScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
+        setTitle("Home Screen");
         activityAcceptorHomeScreenBinding=ActivityAcceptorHomeScreenBinding.inflate(getLayoutInflater());
         setContentView(activityAcceptorHomeScreenBinding.getRoot());
 

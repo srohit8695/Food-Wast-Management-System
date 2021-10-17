@@ -45,6 +45,7 @@ public class DonorDonateBrief extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        setTitle("Donate");
         activityDonorDonateBriefBinding=ActivityDonorDonateBriefBinding.inflate(getLayoutInflater());
         setContentView(activityDonorDonateBriefBinding.getRoot());
         ActivityCompat.requestPermissions( this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);

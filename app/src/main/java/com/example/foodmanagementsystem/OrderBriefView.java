@@ -27,6 +27,7 @@ public class OrderBriefView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_order_brief_view);
 
+        setTitle("Orders");
         activityOrderBriefViewBinding=ActivityOrderBriefViewBinding.inflate(getLayoutInflater());
         setContentView(activityOrderBriefViewBinding.getRoot());
 

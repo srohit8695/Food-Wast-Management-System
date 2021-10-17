@@ -24,6 +24,7 @@ public class OrderAcceptorInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_order_acceptor_info);
 
+        setTitle("Orders");
         activityOrderAcceptorInfoBinding = ActivityOrderAcceptorInfoBinding.inflate(getLayoutInflater());
         setContentView(activityOrderAcceptorInfoBinding.getRoot());
 

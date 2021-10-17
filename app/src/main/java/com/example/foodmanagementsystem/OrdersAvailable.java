@@ -23,6 +23,7 @@ public class OrdersAvailable extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("Orders");
 //        setContentView(R.layout.activity_orders_available);
         activityOrdersAvailableBinding=ActivityOrdersAvailableBinding.inflate(getLayoutInflater());
         setContentView(activityOrdersAvailableBinding.getRoot());

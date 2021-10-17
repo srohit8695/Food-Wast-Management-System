@@ -31,7 +31,7 @@ public class DonorHomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_donor_home_screen);
-
+        setTitle("Home Screen");
         try {
             activityDonorHomeScreenBinding=ActivityDonorHomeScreenBinding.inflate(getLayoutInflater());
             setContentView(activityDonorHomeScreenBinding.getRoot());

@@ -22,7 +22,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Food Type"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/foodType"
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -49,7 +49,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Food Name"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/foodName"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -76,7 +76,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Food Dated"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/foodDated"
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -103,7 +103,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Food Expire"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/foodExpire"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -130,7 +130,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Food Qty"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/foodQty"
@@ -139,7 +139,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -157,7 +157,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Donor Name"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/donorName"
@@ -166,7 +166,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -184,7 +184,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Donor Phone No"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/donorPh"
@@ -193,7 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
@@ -211,7 +211,7 @@
             android:textColor="@color/black"
             android:textStyle="bold"
             android:text="Donor Address"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <TextView
             android:id="@+id/donorAddress"
@@ -220,7 +220,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="5"
             android:textColor="@color/black"
-            android:textSize="16dp"/>
+            android:textSize="16sp"/>
 
     </LinearLayout>
 
