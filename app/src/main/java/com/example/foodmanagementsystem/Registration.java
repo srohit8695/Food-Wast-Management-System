@@ -15,29 +15,24 @@ import android.widget.Toast;
 
 import com.example.foodmanagementsystem.database.LoginDatabase;
 import com.example.foodmanagementsystem.database.UserDataBase;
+import com.example.foodmanagementsystem.databinding.ActivityRegistrationBinding;
 import com.example.foodmanagementsystem.model.LoginData;
 import com.example.foodmanagementsystem.model.User;
 
 public class Registration extends AppCompatActivity {
 
-    private RadioGroup radiogrp;
-    private EditText uname,uphone,uaddress,uid,pwd;
+    private ActivityRegistrationBinding activityRegistrationBinding;
     private String usertype="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_registration);
+        activityRegistrationBinding = ActivityRegistrationBinding.inflate(getLayoutInflater());
+        setContentView(activityRegistrationBinding.getRoot());
 
         setTitle("Registration");
-        uname = findViewById(R.id.uname);
-        uphone = findViewById(R.id.uphone);
-        uaddress = findViewById(R.id.uaddress);
-        uid = findViewById(R.id.uid);
-        pwd = findViewById(R.id.pwd);
-        radiogrp=findViewById(R.id.radiogrp);
 
-        radiogrp.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        activityRegistrationBinding.radiogrp.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 RadioButton radioButton=findViewById(checkedId);
@@ -50,15 +45,15 @@ public class Registration extends AppCompatActivity {
     public void register(View view) {
 
         if(
-                (!uname.getText().toString().trim().equals(""))&&
-                (!uphone.getText().toString().trim().equals(""))&&
-                (!uaddress.getText().toString().trim().equals(""))&&
-                (!uid.getText().toString().trim().equals(""))&&
-                (!pwd.getText().toString().trim().equals(""))&&
+                (!activityRegistrationBinding.uname.getText().toString().trim().equals(""))&&
+                (!activityRegistrationBinding.uphone.getText().toString().trim().equals(""))&&
+                (!activityRegistrationBinding.uaddress.getText().toString().trim().equals(""))&&
+                (!activityRegistrationBinding.uid.getText().toString().trim().equals(""))&&
+                (!activityRegistrationBinding.pwd.getText().toString().trim().equals(""))&&
                 (!usertype.trim().equals(""))
         )
         {
-           new CheckUser().execute(uid.getText().toString().trim());
+           new CheckUser().execute(activityRegistrationBinding.uid.getText().toString().trim());
         }
         else{
             Toast.makeText(this, "Enter and Select all the fields.", Toast.LENGTH_SHORT).show();
@@ -96,8 +91,8 @@ public class Registration extends AppCompatActivity {
             super.onPostExecute(aBoolean);
 
             if(aBoolean){
-                User user=new User(uid.getText().toString().trim(),pwd.getText().toString().trim(),uphone.getText().toString().trim(),
-                        usertype.trim(),uaddress.getText().toString().trim(),uname.getText().toString().trim());
+                User user=new User(activityRegistrationBinding.uid.getText().toString().trim(),activityRegistrationBinding.pwd.getText().toString().trim(),activityRegistrationBinding.uphone.getText().toString().trim(),
+                        usertype.trim(),activityRegistrationBinding.uaddress.getText().toString().trim(),activityRegistrationBinding.uname.getText().toString().trim());
 
                 InsertUserRoomDatabase insertUserRoomDatabase=new InsertUserRoomDatabase();
                 insertUserRoomDatabase.execute(user);
